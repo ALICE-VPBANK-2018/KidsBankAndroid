@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "424560182192",
+    "firebase_url": "https://kidsbank-vpbank.firebaseio.com",
+    "project_id": "kidsbank-vpbank",
+    "storage_bucket": "kidsbank-vpbank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424560182192:android:652b0f5eba90b90d",
+        "android_client_info": {
+          "package_name": "com.quang.vpbank.ai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424560182192-d98iiiajv551l9nacvb6p8fpq0nkoomp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quang.vpbank.ai",
+            "certificate_hash": "e7660aa39b56b7d1dfeafe16c02945f1bc43776b"
+          }
+        },
+        {
+          "client_id": "424560182192-miq8k1tv1fqm0q1indt7ei18jqdmrd2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIjrnOfCwcV8m-585XNanakOhKlSuVlVI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424560182192-miq8k1tv1fqm0q1indt7ei18jqdmrd2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
