@@ -43,6 +43,8 @@ class MainFragment : Fragment() {
         viewPager.adapter = adapter
         tabLayout.setupWithViewPager(viewPager)
 
+
+
     }
 
 }
