@@ -16,12 +16,6 @@ import com.quang.vpbank.ai.model.FamilySharing
 import im.dacer.androidcharts.LineView
 import kotlinx.android.synthetic.main.fragment_plan.*
 
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
 /**
  * A simple [Fragment] subclass.
  *
@@ -43,7 +37,7 @@ class PlanFragment : Fragment() {
             test.add((i + 1).toString())
         }
         lineView.setBottomTextList(test)
-        lineView.setColorArray(intArrayOf(Color.parseColor("#F44336"), Color.parseColor("#9C27B0"), Color.parseColor("#2196F3"), Color.parseColor("#009688")))
+        lineView.setColorArray(intArrayOf(Color.parseColor("#5100fe"), Color.parseColor("#00d6d6"), Color.parseColor("#2196F3"), Color.parseColor("#009688")))
         lineView.setDrawDotLine(true)
         lineView.setShowPopup(LineView.SHOW_POPUPS_NONE)
         randomSet(lineView)
@@ -78,16 +72,9 @@ class PlanFragment : Fragment() {
             dataList2.add((Math.random() * random).toInt())
         }
 
-        val dataList3 = ArrayList<Int>()
-        random = (Math.random() * 9 + 1).toInt().toFloat()
-        for (i in 0 until randomint) {
-            dataList3.add((Math.random() * random).toInt())
-        }
-
         val dataLists = ArrayList<ArrayList<Int>>()
         dataLists.add(dataList)
         dataLists.add(dataList2)
-        dataLists.add(dataList3)
 
         lineView.setDataList(dataLists)
     }

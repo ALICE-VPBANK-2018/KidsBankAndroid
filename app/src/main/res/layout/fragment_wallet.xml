@@ -16,20 +16,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Have a good day Mr.Harry"
+            android:text="Have a good day Mr.Harry..."
             android:textSize="20sp" />
 
         <LinearLayout
             android:id="@+id/layoutOverview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:text="Overview"
                 android:textAllCaps="true"
                 android:textSize="30sp"
@@ -38,6 +37,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Touch to view details"
                 android:textSize="18sp" />
 
@@ -50,7 +50,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -84,6 +84,7 @@
                 android:layout_width="150dp"
                 android:layout_height="1dp"
                 android:layout_gravity="end"
+                android:layout_marginTop="20dp"
                 android:background="@color/colorPrimary" />
 
             <TextView
@@ -97,12 +98,12 @@
             android:id="@+id/layoutHistory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:text="History"
                 android:textAllCaps="true"
                 android:textSize="30sp"
@@ -111,6 +112,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Touch to view details"
                 android:textSize="18sp" />
 
@@ -123,7 +125,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -159,7 +161,7 @@
             android:id="@+id/layoutDiary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="45dp"
             android:orientation="vertical">
 
             <TextView
@@ -173,6 +175,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Touch to view details"
                 android:textSize="18sp" />
 

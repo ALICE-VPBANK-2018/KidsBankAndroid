@@ -57,5 +57,7 @@
     <color name="tim">#37003f</color>
     <color name="pink1">#EE9CA7</color>
     <color name="pink2">#FFDDE1</color>
+    <color name="line1">#5100fe</color>
+    <color name="line2">#00d6d6</color>
 
 </resources>
