@@ -37,7 +37,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ffffff" />
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -76,7 +77,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ffffff" />
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rvDailySeed"
@@ -109,7 +111,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ffffff" />
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rvFamilySharing"
@@ -117,7 +120,6 @@
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
-
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

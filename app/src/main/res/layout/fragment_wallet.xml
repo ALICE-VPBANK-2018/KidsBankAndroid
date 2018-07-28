@@ -44,7 +44,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ffffff" />
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -83,7 +84,7 @@
                 android:layout_width="150dp"
                 android:layout_height="1dp"
                 android:layout_gravity="end"
-                android:background="#ffffff" />
+                android:background="@color/colorPrimary" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -116,7 +117,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ffffff" />
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -177,7 +179,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ffffff" />
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
 
         </LinearLayout>
 

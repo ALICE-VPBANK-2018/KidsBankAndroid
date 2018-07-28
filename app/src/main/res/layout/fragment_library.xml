@@ -38,7 +38,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ffffff" />
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rvDocument"
@@ -74,7 +75,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ffffff" />
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -133,7 +135,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ffffff" />
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
 
             <LinearLayout
                 android:layout_width="match_parent"
