@@ -10,12 +10,11 @@ import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.WindowManager
 import com.quang.vpbank.ai.R
+import com.quang.vpbank.ai.fragment.AliceFragment
 import com.quang.vpbank.ai.fragment.MainFragment
 import jp.co.recruit_lifestyle.android.floatingview.FloatingViewListener
 import jp.co.recruit_lifestyle.android.floatingview.FloatingViewManager
 import kotlinx.android.synthetic.main.activity_main.*
-
-
 
 
 class MainActivity : AppCompatActivity(), FloatingViewListener {
@@ -36,14 +35,19 @@ class MainActivity : AppCompatActivity(), FloatingViewListener {
         windowManager.defaultDisplay.getMetrics(metrics)
         val inflater = LayoutInflater.from(this)
         val iconView = inflater.inflate(R.layout.widget_chathead, null, false)
-        iconView.setOnClickListener {
-
-        }
 
         val mFloatingViewManager = FloatingViewManager(this, this)
         val options = FloatingViewManager.Options()
         options.overMargin = (16 * metrics.density).toInt()
         mFloatingViewManager.addViewToWindow(iconView, options)
+
+        iconView.setOnClickListener {
+            val fragmentTransaction = supportFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.layout_content, AliceFragment())
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+            mFloatingViewManager.removeAllViewToWindow()
+        }
     }
 
     private fun initControl() {
