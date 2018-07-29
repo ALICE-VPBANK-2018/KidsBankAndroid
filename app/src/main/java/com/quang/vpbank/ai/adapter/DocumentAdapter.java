@@ -15,6 +15,8 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.ViewHo
 
     private ArrayList<String> listName;
 
+    private OnItemClickListener mItemClickListener;
+
     public DocumentAdapter(ArrayList<String> listName) {
         this.listName = listName;
     }
@@ -37,15 +39,29 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.ViewHo
         return listName.size();
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView tvName;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvName = itemView.findViewById(R.id.tvName);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            if (mItemClickListener != null)
+                mItemClickListener.onItemClick(view, getAdapterPosition());
         }
     }
 
+    public interface OnItemClickListener {
+        void onItemClick(View view, int position);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener mItemClickListener) {
+        this.mItemClickListener = mItemClickListener;
+    }
 
 }

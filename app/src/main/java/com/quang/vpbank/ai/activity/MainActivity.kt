@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity(), FloatingViewListener, NavigationView.O
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            val dialog = AlertDialog.Builder(this)
+            val dialog = AlertDialog.Builder(this, R.style.AlertDialogCustom)
             dialog.setMessage("Do you want to quit app?")
             dialog.setPositiveButton("Yes") { _, _ -> finish() }
             dialog.setNegativeButton("No") { dialog, _ -> dialog.dismiss() }
@@ -91,6 +91,12 @@ class MainActivity : AppCompatActivity(), FloatingViewListener, NavigationView.O
             R.id.nav_library -> {
                 val fragmentTransaction = supportFragmentManager!!.beginTransaction()
                 fragmentTransaction.replace(R.id.layout_content, MainFragment())
+                fragmentTransaction.addToBackStack(null)
+                fragmentTransaction.commit()
+            }
+            R.id.nav_alice -> {
+                val fragmentTransaction = supportFragmentManager!!.beginTransaction()
+                fragmentTransaction.replace(R.id.layout_content, AliceFragment())
                 fragmentTransaction.addToBackStack(null)
                 fragmentTransaction.commit()
             }

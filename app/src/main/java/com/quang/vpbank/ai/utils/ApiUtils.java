@@ -11,4 +11,9 @@ public class ApiUtils {
         return RetrofitClient.getClient(BASE_URL).create(AliceService.class);
     }
 
+    public static QuestionService getQuestionService() {
+
+        return RetrofitClient.getClient(BASE_URL).create(QuestionService.class);
+    }
+
 }

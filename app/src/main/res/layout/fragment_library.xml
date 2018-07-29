@@ -88,24 +88,28 @@
                 android:orientation="horizontal">
 
                 <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/quiz1"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_lib_book" />
 
                 <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/quiz2"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_lib_book" />
 
                 <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/quiz3"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_lib_book" />
 
                 <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/quiz4"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_weight="1"
