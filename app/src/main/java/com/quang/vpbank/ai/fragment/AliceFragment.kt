@@ -90,6 +90,8 @@ class AliceFragment : Fragment() {
                                         "\n" +
                                         "$description", true))
                             }
+                            adapter.notifyDataSetChanged()
+                            rvMessage.scrollToPosition(listMessage.size - 1)
                             isRandomFinished = true
                         }
 
